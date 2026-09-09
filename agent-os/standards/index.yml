@@ -1,0 +1,22 @@
+# Agent OS standards index — one line per standard, used for matching + injection.
+standards:
+  - path: global/swift-style.md
+    description: Swift type/naming/function conventions; no force unwraps, why-comments only.
+  - path: global/concurrency.md
+    description: MainActor owns UI state; ingestion is detached; one hop back per scan.
+  - path: data/source-adapters.md
+    description: UsageSource protocol contract — read-only, no content, degrade don't fail, dedupe keys.
+  - path: data/incremental-scanning.md
+    description: Per-file size/mtime/offset watermarks, 8s poll cadence, snapshot persistence.
+  - path: ui/notch-windows.md
+    description: Notch geometry facts, NSPanel config, the never-wider-than-the-cutout blocking rule.
+  - path: ui/theme-tokens.md
+    description: Dark-first palette, three text levels, monospaced digits, animation tokens.
+  - path: ui/widgets.md
+    description: Desktop-widget window level, focus rules, column-wrapping layout, and how to render quota honestly.
+  - path: ui/mascot.md
+    description: The mascot rig — named rect parts, hip pivots, floor clip, sampled timelines, and why bounds must fit the jump.
+  - path: ui/charts.md
+    description: Validated categorical palette and why its order is fixed, form-by-job table, mark specs, and labelling what a ratio does not cover.
+  - path: ui/controls.md
+    description: Pill segmented control (shared matchedGeometry highlight, clipped labels) and the header search with its metaball results panel.

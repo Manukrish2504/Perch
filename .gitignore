@@ -1,0 +1,6 @@
+build/
+.DS_Store
+*.dSYM/
+
+# Local agent tooling, not part of the app.
+.claude/
